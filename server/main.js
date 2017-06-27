@@ -1,7 +1,22 @@
 import { Meteor } from 'meteor/meteor';
+import { CommissaryItems } from '../shared/commissaryItems.js';
 
 Meteor.startup(() => {
   // code to run on server at startup
+    //remove all items from db
+    //CommissaryItems.remove({});
+    //make sure to remove this line before production
+    const itemsCount = CommissaryItems.find({}).count();
+    console.log(`itemsCount: ${itemsCount}`);
+
+    if(itemsCount === 0){
+        commissaryItems.forEach(function(item, i){
+            if (item.name !== "") {
+                const id = CommissaryItems.insert(item);
+                console.log(`inserted item : ${id}`);
+            }
+        });
+    }
 });
 
 /**
@@ -10,18 +25,28 @@ Meteor.startup(() => {
 
 /**
  * type: snack, drink other???
+ *size as an obj..search best practices for storing weights-measurment, amount, unit, quantity!!!!
+ *dollars and cents no $ as a float
  **/
-const commissary = [{
-    name: "Organic Sliced Apples",
-    size: "32 oz",
-    image: {
-        src: "",
-        alt: ""
+const commissaryItems = [
+    {
+        name: "Organic Sliced Apples",
+        measurement: {
+            unit: "oz",
+            amount: 32,
+            count: 1
+        },
+        image: {
+            src: "",
+            alt: ""
+        },
+        currency: {
+            symbol: "$",
+            amount: 6.99
+        },
+        store: "Costco",
+        active: true
     },
-    price: "$6.99",
-    store: "Costco",
-    favorite: ""
-},
     {
         name: "Welchs Mixed Fruit Fruit Snacks",
         size: "4.5 lbs",
@@ -40,7 +65,7 @@ const commissary = [{
             src: "",
             alt: ""
         },
-        price: "7.97",
+        price: "$7.97",
         store: "Costco",
         favorite: ""
     },
