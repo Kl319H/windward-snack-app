@@ -508,25 +508,25 @@ const commissaryItems = [
         favorite: ""
     },
     {
-        name: "",
-        size: "",
+        name: "Cholula",
+        size: "2 12 oz",
         image: {
             src: "",
             alt: ""
         },
-        price: "",
-        store: "",
+        price: "9.79",
+        store: "Costco",
         favorite: ""
     },
     {
-        name: "",
-        size: "",
+        name: "Tabasco",
+        size: "12 fl oz",
         image: {
             src: "",
             alt: ""
         },
-        price: "",
-        store: "",
+        price: "6.09",
+        store: "Costco",
         favorite: ""
     },
     {
