@@ -38,7 +38,7 @@ const commissaryItems = [
         },
         image: {
             src: "",
-            alt: ""
+            alt: "individual bags of sliced gala apples"
         },
         currency: {
             symbol: "$",
@@ -49,583 +49,775 @@ const commissaryItems = [
     },
     {
         name: "Welchs Mixed Fruit Fruit Snacks",
-        size: "4.5 lbs",
+        measurement: {
+            unit: "lb",
+            amount: 4.5,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a big blue box of Welchs Mixed fruit fruit snacks"
+        },
+        currency: {
+            symbol: "$",
+            amount: 13.89
         },
         price: "$13.89",
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Quaker Instant Oatmeal Flavor Variety",
-        size: "4 lb 10 oz",
+        measurement: {
+            unit: "lb",
+            amount: 4.63,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "quaker instant oatmeal variety pack with 3 flavors, maple and brown sugar, apple cinnamon and cinnamon"
         },
-        price: "$7.97",
+        currency: {
+            symbol: "$",
+            amount: 7.97
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Garden Sea Salt Veggie Straws",
-        size: "1.56 lbs",
+        measurement: {
+            unit: "lb",
+            amount: 1.56,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a bag of veggie straws"
         },
-        price: "$8.59",
+        currency: {
+            symbol: "$",
+            amount: 8.59
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Hershey All Chocolate Fun Size Variety Pack",
-        size: "90 oz",
+        measurement: {
+            unit: "oz",
+            amount: 90,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "hershey fun size variety bag of chocolate"
         },
-        price: "$19.59",
+        currency: {
+            symbol: "$",
+            amount: 19.59
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Quaker Chewy Variety Pack Granola Bars",
-        size: "3.15 lbs",
+        measurement: {
+            unit: "lb",
+            amount: 3.15,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "quaker oat chewy variet granola bars with chocolate chip and peanut butter chocolate chip"
         },
-        price: "$8.99",
+        currency: {
+            symbol: "$",
+            amount: 8.99
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Utz Pub Mix",
-        size: "44 oz",
+        measurement: {
+            unit: "oz",
+            amount: 44,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "Utz brand pub mix containing Honey Mustard & Cheddar Cheese Twistix, Worcestershire Rye Chips, Honey Roasted Sesame Chips, Oriental Rice Crackers, Pretzel Stix and Nacho Bagel Chips"
         },
-        price: "$6.99",
+        currency: {
+            symbol: "$",
+            amount: 6.99
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Sunshine Cheez-It",
-        size: "3 lbs",
+        measurement: {
+            unit: "lb",
+            amount: 3,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "sunshine brand Cheez-Its"
         },
-        price: "$7.99",
+        currency: {
+            symbol: "$",
+            amount: 7.99
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Chex Mix Traditional Savory Snack Mix",
-        size: "40 oz",
+        measurement: {
+            unit: "oz",
+            amount: 40,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "Chex mix traditional savory snack mix bag"
         },
-        price: "$5.98",
+        currency: {
+            symbol: "$",
+            amount: 5.89
+        },
         store: "Sam's Club",
-        favorite: ""
+        active: true
     },
     {
         name: "San Francisco Pretzel Company Sourdough Pretzels",
-        size: "52 oz",
+        measurement: {
+            unit: "oz",
+            amount: 52,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a bit barrel od san francisco pretzel company sourdough pretzels"
         },
-        price: "8.09",
+        currency: {
+            symbol: "$",
+            amount: 8.09
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Kirkland Signature Extra Fancy Mixed Nuts",
-        size: "2.5 lbs",
+        measurement: {
+            unit: "lb",
+            amount: 2.5,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "plastic tub of saletd mixed nut with no peanuts"
         },
-        price: "$21.89",
+        currency: {
+            symbol: "$",
+            amount: 21.89
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Kirkland Signature Extra Fancy Unsalted Mixed Nuts",
-        size: "2.5",
+        measurement: {
+            unit: "lb",
+            amount: 2.5,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "plastic tub of unsalted mixed nuts no peanuts"
         },
-        price: "$21.99",
+        currency: {
+            symbol: "$",
+            amount: 21.99
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Kirkland Signature Trail Mix",
-        size: "4 lbs",
+        measurement: {
+            unit: "lb",
+            amount: 4,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a bag of M&M trail mix"
         },
-        price: "$15.79",
+        currency: {
+            symbol: "$",
+            amount: 15.79
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "WildRoots Coastal Berry Blend 100% Natural Trail Mix",
-        size: "26 oz",
+        measurement: {
+            unit: "oz",
+            amount: 26,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a bag of berry blend trail mix"
         },
-        price: "$11.89",
+        currency: {
+            symbol: "$",
+            amount: 11.89
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Nature's Bakery Stone Ground Whole Wheat Fig Bars Variety Pack",
-        size: "4.5 lbs",
+        measurement: {
+            unit: "lb",
+            amount: 4.5,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a variety box of whole Wheat fug bars, blueberry, raspberry and apple"
         },
-        price: "$11.49",
+        currency: {
+            symbol: "$",
+            amount: 11.49
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Kirkland Signature Bagels (Plain, Onion, Sesame, Parmesan Cheese)",
-        size: "2 x 6 ct",
+        measurement: {
+            unit: "ct",
+            amount: 6,
+            count: 2
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "2 bags of Einstein brothers bagels"
         },
-        price: "$5.49",
+        currency: {
+            symbol: "$",
+            amount: 5.49
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Kraft Philadelphia Original Cream Cheese Spread",
-        size: "12 oz",
+        measurement: {
+            unit: "oz",
+            amount: 12,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a big tub of Philadelphia Original Cream Cheese"
         },
-        price: "$4.89",
+        currency: {
+            symbol: "$",
+            amount: 4.89
+        },
         store: "King Soopers",
-        favorite: ""
+        active: true
     },
     {
         name: "Adams 100% Natural Crunchy Peanut Butter",
-        size: "16 oz",
+        measurement: {
+            unit: "oz",
+            amount: 16,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a big jar of Adams 100% Natural Crunchy Peanut Butter"
         },
-        price: "$4.89",
+        currency: {
+            symbol: "$",
+            amount: 4.89
+        },
         store: "King Soopers",
-        favorite: ""
+        active: true
     },
     {
         name: "Adams 100% Natural Creamy Peanut Butter",
-        size: "16 oz",
+        measurement: {
+            unit: "oz",
+            amount: 16,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a big jar of Adams 100% Natural Creamy Peanut Butter"
         },
-        price: "$4.89",
-        store: "King Soopers",
-        favorite: ""
-    },
-    {
-        name: "Kroger Granulated Sugar",
-        size: "4 lbs",
-        image: {
-            src: "",
-            alt: ""
+        currency: {
+            symbol: "$",
+            amount: 4.89
         },
-        price: "$2.39",
         store: "King Soopers",
-        favorite: ""
+        active: true
     },
     {
         name: "Twinings English Breakfast Tea Bags",
-        size: "50 ct",
+        measurement: {
+            unit: "ct",
+            amount: 50,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a big box of Twinings Englich Breakfast Tea Bags"
         },
-        price: "$8.59",
+        currency: {
+            symbol: "$",
+            amount: 8.59
+        },
         store: "King Soopers",
-        favorite: ""
+        active: true
     },
     {
         name: "Bigelow Earl Grey Black Tea Blend",
-        size: "20 ct",
+        measurement: {
+            unit: "ct",
+            amount: 20,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a box of Bigelow Earl Grey Tea Bags"
         },
-        price: "$3.69",
+        currency: {
+            symbol: "$",
+            amount: 3.69
+        },
         store: "King Soopers",
-        favorite: ""
+        active: true
     },
     {
         name: "Bigelow Green Tea Pack of 6",
-        size: "320 ct",
+        measurement: {
+            unit: "ct",
+            amount: 40,
+            count: 6
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a 6 pack of bigelow grean tea boxes"
         },
-        price: "$24.54",
+        currency: {
+            symbol: "$",
+            amount: 24.54
+        },
         store: "Amazon",
-        favorite: ""
+        active: true
     },
     {
         name: "Stash Tea Chamomile Caffeine Free Herbal Tea Bags",
-        size: "20 ct",
+        measurement: {
+            unit: "ct",
+            amount: 20,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a box of stash tea chamomile Herbal tea bags"
         },
-        price: "$4.89",
+        currency: {
+            symbol: "$",
+            amount: 4.89
+        },
         store: "King Soopers",
-        favorite: ""
+        active: true
     },
     {
         name: "Bigelow Constant Comment Black Tea Blend",
-        size: "20 ct",
+        measurement: {
+            unit: "ct",
+            amount: 20,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a box of bigelow Constant Commenttea bags"
         },
-        price: "$3.69",
+        currency: {
+            symbol: "$",
+            amount: 3.69
+        },
         store: "King Soopers",
-        favorite: ""
+        active: true
     },
     {
         name: "King Soopers Whole Vitamin D Milk",
-        size: "Half Gallon",
+        measurement: {
+            unit: "gal",
+            amount: .5,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "A half gallon jug of King Soopers whole milk"
         },
-        price: "$2.59",
+        currency: {
+            symbol: "$",
+            amount: 2.59
+        },
         store: "King Soopers",
-        favorite: ""
+        active: true
     },
     {
         name: "Simply Orange Juice",
-        size: "89 fl oz",
+        measurement: {
+            unit: "fl oz",
+            amount: 89,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a big jug of Simply Orange Juice"
         },
-        price: "$7.39",
+        currency: {
+            symbol: "$",
+            amount: 7.39
+        },
         store: "King Soopers",
-        favorite: ""
+        active: true
     },
     {
         name: "Nestle Coffee Mate French Vanilla Sugar Free Liquid Coffee Creamer",
-        size: "64 fl oz",
+        measurement: {
+            unit: "fl oz",
+            amount: 64,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a big jug of nestle coffee mate frehcn vanilla Sugar free liquid coffee creamer"
         },
-        price: "$7.99",
+        currency: {
+            symbol: "$",
+            amount: 7.99
+        },
         store: "King Soopers",
-        favorite: ""
+        active: true
     },
     {
         name: "Nestle Coffee Mate French Vanilla Coffee Creamer",
-        size: "64 oz",
+        measurement: {
+            unit: "oz",
+            amount: 64,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a big jug 0f coffee mate french vanilla coffee creamer"
         },
-        price: "$7.99",
+        currency: {
+            symbol: "$",
+            amount: 7.99
+        },
         store: "King Soopers",
-        favorite: ""
+        active: true
     },
     {
         name: "Horizon Organic Organic Half & Half",
-        size: "32 fl oz",
+        measurement: {
+            unit: "fl oz",
+            amount: 32,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a quart of horizon organic half & half"
         },
-        price: "$5.19",
+        currency: {
+            symbol: "$",
+            amount: 5.19
+        },
         store: "King Soopers",
-        favorite: ""
+        active: true
     },
     {
         name: "Lay's Classic Potato Chips Party Size!(selection varies)",
-        size: "13.75 oz",
+        measurement: {
+            unit: "oz",
+            amount: 13.75,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a party size bag of lays classic potato chips"
         },
-        price: "$4.29",
+        currency: {
+            symbol: "$",
+            amount: 4.29
+        },
         store: "King Soopers",
-        favorite: ""
+        active: true
     },
     {
         name: "Coca-Cola",
-        size: "35 x 12 fl oz",
+        measurement: {
+            unit: "fl oz",
+            amount: 12,
+            count: 35
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a flat of coka-cola"
         },
-        price: "$9.65",
+        currency: {
+            symbol: "$",
+            amount: 9.65
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Dr Pepper",
-        size: "35 x 12 fl oz",
+        measurement: {
+            unit: "fl oz",
+            amount: 32,
+            count: 35
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a box of Dr. Pepper"
         },
-        price: "$9.65",
+        currency: {
+            symbol: "$",
+            amount: 9.65
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Sprite",
-        size: "35 x 12 oz",
+        measurement: {
+            unit: "oz",
+            amount: 12,
+            count: 35
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a flat of sprite"
         },
-        price: "$9.65",
+        currency: {
+            symbol: "$",
+            amount: 9.65
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     }, {
         name: "Coca-Cola Zero",
-        size: "35 x 12 fl oz",
+        measurement: {
+            unit: "fl oz",
+            amount: 32,
+            count: 35
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a flat of coke zero"
         },
-        price: "$9.65",
+        currency: {
+            symbol: "$",
+            amount: 9.65
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     }, {
         name: "Pepsi",
-        size: "36 x 12 fl oz",
+        measurement: {
+            unit: "fl oz",
+            amount: 12,
+            count: 36
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a box of pepsi"
         },
-        price: "$9.65",
+        currency: {
+            symbol: "$",
+            amount: 9.65
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Mountain Dew",
-        size: "12 x 12 fl oz",
+        measurement: {
+            unit: "fl oz",
+            amount: 12,
+            count: 12
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a 12 pack box of Mountain Dew"
         },
-        price: "$6.09",
+        currency: {
+            symbol: "$",
+            amount: 6.09
+        },
         store: "King Soopers",
-        favorite: ""
+        active: true
     },
     {
         name: "LaCroix",
-        size: "24 x 12 fl oz",
+        measurement: {
+            unit: "fl oz",
+            amount: 12,
+            count: 24
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a flat of la croix variety pack"
         },
-        price: "7.79",
+        currency: {
+            symbol: "$",
+            amount: 7.79
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Sparkling Ice",
-        size: "18 x 17 fl oz",
+        measurement: {
+            unit: "fl oz",
+            amount: 17,
+            count: 18
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a flat of Sparkling Ice bottles variety pack"
         },
-        price: "$13.49",
+        currency: {
+            symbol: "$",
+            amount: 13.49
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Tradewinds Unsweetened Tea",
-        size: "1 gal",
+        measurement: {
+            unit: "gal",
+            amount: 1,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a gallon of Unsweetened tea"
         },
-        price: "$4.39",
+        currency: {
+            symbol: "$",
+            amount: 4.39
+        },
         store: "King Soopers",
-        favorite: ""
+        active: true
     },
     {
-        name: "Tradewinds Tea",
-        size: "1 gal",
+        name: "Tradewinds Sweet Tea",
+        measurement: {
+            unit: "gal",
+            amount: 1,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a gallon of sweet tea"
         },
-        price: "$4.39",
+        currency: {
+            symbol: "$",
+            amount: 4.39
+        },
         store: "King Soopers",
-        favorite: ""
+        active: true
     },
     {
         name: "Kirkland Signature House Blend",
-        size: "32 oz",
+        measurement: {
+            unit: "oz",
+            amount: 32,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "Starbucks House Blend Coffee Beans"
         },
-        price: "$9.99",
+        currency: {
+            symbol: "$",
+            amount: 9.99
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Kirkland Signature Pure Clover Honey",
-        size: "80 oz",
+        measurement: {
+            unit: "oz",
+            amount: 80,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "A big jug of pure clover honey"
         },
-        price: "11.99",
+        currency: {
+            symbol: "$",
+            amount: 11.99
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Cholula",
-        size: "2 12 oz",
+        measurement: {
+            unit: "oz",
+            amount: 12,
+            count: 2
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a two pack of Cholula"
         },
-        price: "9.79",
+        currency: {
+            symbol: "$",
+            amount: 9.79
+        },
         store: "Costco",
-        favorite: ""
+        active: true
     },
     {
         name: "Tabasco",
-        size: "12 fl oz",
+        measurement: {
+            unit: "fl oz",
+            amount: 12,
+            count: 1
+        },
         image: {
             src: "",
-            alt: ""
+            alt: "a bottle of tobasco"
         },
-        price: "6.09",
+        currency: {
+            symbol: "$",
+            amount: 6.09
+        },
         store: "Costco",
-        favorite: ""
-    },
-    {
-        name: "",
-        size: "",
-        image: {
-            src: "",
-            alt: ""
-        },
-        price: "",
-        store: "",
-        favorite: ""
-    },
-    {
-        name: "",
-        size: "",
-        image: {
-            src: "",
-            alt: ""
-        },
-        price: "",
-        store: "",
-        favorite: ""
-    },
-    {
-        name: "",
-        size: "",
-        image: {
-            src: "",
-            alt: ""
-        },
-        price: "",
-        store: "",
-        favorite: ""
-    },
-    {
-        name: "",
-        size: "",
-        image: {
-            src: "",
-            alt: ""
-        },
-        price: "",
-        store: "",
-        favorite: ""
-    },
-    {
-        name: "",
-        size: "",
-        image: {
-            src: "",
-            alt: ""
-        },
-        price: "",
-        store: "",
-        favorite: ""
-    },
-    {
-        name: "",
-        size: "",
-        image: {
-            src: "",
-            alt: ""
-        },
-        price: "",
-        store: "",
-        favorite: ""
-    },
-    {
-        name: "",
-        size: "",
-        image: {
-            src: "",
-            alt: ""
-        },
-        price: "",
-        store: "",
-        favorite: ""
-    },
-    {
-        name: "",
-        size: "",
-        image: {
-            src: "",
-            alt: ""
-        },
-        price: "",
-        store: "",
-        favorite: ""
-    },
-    {
-        name: "",
-        size: "",
-        image: {
-            src: "",
-            alt: ""
-        },
-        price: "",
-        store: "",
-        favorite: ""
+        active: true
     },
 ]
