@@ -21,6 +21,24 @@ export const commissaryItemData = [
         active: true
     },
     {
+        name: "Unsweetened Almond Milk",
+        measurement: {
+            unit: "qt",
+            amount: 1,
+            count: 6
+        },
+        image: {
+            src: "images/unsweetened-almond-milk.jpg",
+            alt: "6 one quart boxes of unsweetened almond milk"
+        },
+        currency: {
+            symbol: "$",
+            amount: 9.79
+        },
+        store: "Costco",
+        active: true
+    },
+    {
         name: "Welchs Mixed Fruit Fruit Snacks",
         measurement: {
             unit: "lb",
@@ -28,7 +46,7 @@ export const commissaryItemData = [
             count: 1
         },
         image: {
-            src: "",
+            src: "images/welchs-mixed-fruit-fruit-snacks.jpg",
             alt: "a big blue box of Welchs Mixed fruit fruit snacks"
         },
         currency: {
@@ -47,7 +65,7 @@ export const commissaryItemData = [
             count: 1
         },
         image: {
-            src: "",
+            src: "images/quaker-instant-oatmeal-flavor-variety.jpg",
             alt: "quaker instant oatmeal variety pack with 3 flavors, maple and brown sugar, apple cinnamon and cinnamon"
         },
         currency: {
@@ -65,7 +83,7 @@ export const commissaryItemData = [
             count: 1
         },
         image: {
-            src: "",
+            src: "images/garden-sea-salt-veggie-straws.jpg",
             alt: "a bag of veggie straws"
         },
         currency: {
@@ -83,7 +101,7 @@ export const commissaryItemData = [
             count: 1
         },
         image: {
-            src: "",
+            src: "images/hershey-all-chocolate-fun-size-variety-pack.jpg",
             alt: "hershey fun size variety bag of chocolate"
         },
         currency: {
@@ -101,8 +119,8 @@ export const commissaryItemData = [
             count: 1
         },
         image: {
-            src: "",
-            alt: "quaker oat chewy variet granola bars with chocolate chip and peanut butter chocolate chip"
+            src: "images/quaker-chewy-variety-pack-granola-bars.jpg",
+            alt: "quaker oat chewy variety granola bars with chocolate chip and peanut butter chocolate chip"
         },
         currency: {
             symbol: "$",
@@ -119,7 +137,7 @@ export const commissaryItemData = [
             count: 1
         },
         image: {
-            src: "",
+            src: "images/utz-pub-mix.jpg",
             alt: "Utz brand pub mix containing Honey Mustard & Cheddar Cheese Twistix, Worcestershire Rye Chips, Honey Roasted Sesame Chips, Oriental Rice Crackers, Pretzel Stix and Nacho Bagel Chips"
         },
         currency: {
@@ -137,7 +155,7 @@ export const commissaryItemData = [
             count: 1
         },
         image: {
-            src: "",
+            src: "images/sunshine-cheez-it.jpg",
             alt: "sunshine brand Cheez-Its"
         },
         currency: {
@@ -155,7 +173,7 @@ export const commissaryItemData = [
             count: 1
         },
         image: {
-            src: "",
+            src: "images/chex-mix-traditional-savory-snack-mix.jpg",
             alt: "Chex mix traditional savory snack mix bag"
         },
         currency: {
@@ -173,7 +191,7 @@ export const commissaryItemData = [
             count: 1
         },
         image: {
-            src: "",
+            src: "images/san-francisco-pretzel-company-sourdough-pretzels.jpg",
             alt: "a bit barrel od san francisco pretzel company sourdough pretzels"
         },
         currency: {
@@ -191,7 +209,7 @@ export const commissaryItemData = [
             count: 1
         },
         image: {
-            src: "",
+            src: "images/kirkland-signature-extra-fancy-mixed-nuts.jpg",
             alt: "plastic tub of saletd mixed nut with no peanuts"
         },
         currency: {
@@ -209,7 +227,7 @@ export const commissaryItemData = [
             count: 1
         },
         image: {
-            src: "",
+            src: "images/kirkland-signature-extra-fancy-unsalted-mixed-nuts.jpg",
             alt: "plastic tub of unsalted mixed nuts no peanuts"
         },
         currency: {
@@ -227,7 +245,7 @@ export const commissaryItemData = [
             count: 1
         },
         image: {
-            src: "",
+            src: "images/kirkland-signature-trail-mix.jpg",
             alt: "a bag of M&M trail mix"
         },
         currency: {
@@ -245,7 +263,7 @@ export const commissaryItemData = [
             count: 1
         },
         image: {
-            src: "",
+            src: "images/wildroots-coastal-berry-blend-trail-mix.jpg",
             alt: "a bag of berry blend trail mix"
         },
         currency: {
@@ -263,7 +281,7 @@ export const commissaryItemData = [
             count: 1
         },
         image: {
-            src: "",
+            src: "images/natures-bakery-stone-ground-whole-wheat-fig-bars-variety-pack.jpg",
             alt: "a variety box of whole Wheat fug bars, blueberry, raspberry and apple"
         },
         currency: {
