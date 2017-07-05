@@ -1,0 +1,24 @@
+<template name="card">
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-image"  style="background-image: url({{image.src}});"></div>
+                <div class="card-info">
+                    <div class="card-title">{{name}}</div>
+                </div>
+            <div class="card-social">
+                <ul>
+                  <li data-like>
+                      <i class="fa fa-heart-o {{userLikedClass}}" aria-hidden="true"></i>
+                      <span class="badge">{{likes}}</span>
+                  </li>
+                  <li data-dislike>
+                      <i class="fa fa-thumbs-o-down {{userDislikedClass}}" aria-hidden="true"></i>
+                      <span class="badge">{{dislikes}}</span>
+                  </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>
