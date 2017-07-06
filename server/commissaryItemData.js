@@ -4,6 +4,7 @@
 export const commissaryItemData = [
     {
         name: "Organic Sliced Apples",
+        shortName: "Organic Sliced Apples",
         measurement: {
             unit: "oz",
             amount: 32,
@@ -22,6 +23,7 @@ export const commissaryItemData = [
     },
     {
         name: "Unsweetened Almond Milk",
+        shortName: "Unsweetenend Almond Milk",
         measurement: {
             unit: "qt",
             amount: 1,
@@ -40,6 +42,7 @@ export const commissaryItemData = [
     },
     {
         name: "Welchs Mixed Fruit Fruit Snacks",
+        shortName: "Welches Fruit Snacks",
         measurement: {
             unit: "lb",
             amount: 4.5,
@@ -59,6 +62,7 @@ export const commissaryItemData = [
     },
     {
         name: "Quaker Instant Oatmeal Flavor Variety",
+        shortName: "Quaker Instant Oatmeal",
         measurement: {
             unit: "lb",
             amount: 4.63,
@@ -77,6 +81,7 @@ export const commissaryItemData = [
     },
     {
         name: "Garden Sea Salt Veggie Straws",
+        shortName: "Veggie Straws",
         measurement: {
             unit: "lb",
             amount: 1.56,
@@ -95,6 +100,7 @@ export const commissaryItemData = [
     },
     {
         name: "Hershey All Chocolate Fun Size Variety Pack",
+        shortName: "Hershey Fun Size",
         measurement: {
             unit: "oz",
             amount: 90,
@@ -113,6 +119,7 @@ export const commissaryItemData = [
     },
     {
         name: "Quaker Chewy Variety Pack Granola Bars",
+        shortName: "Chewy Granola Bars",
         measurement: {
             unit: "lb",
             amount: 3.15,
@@ -131,6 +138,7 @@ export const commissaryItemData = [
     },
     {
         name: "Utz Pub Mix",
+        shortName: "Pub Mix",
         measurement: {
             unit: "oz",
             amount: 44,
@@ -149,6 +157,7 @@ export const commissaryItemData = [
     },
     {
         name: "Sunshine Cheez-It",
+        shortName: "Cheez-Its",
         measurement: {
             unit: "lb",
             amount: 3,
@@ -167,6 +176,7 @@ export const commissaryItemData = [
     },
     {
         name: "Chex Mix Traditional Savory Snack Mix",
+        shortName: "Chex Mix",
         measurement: {
             unit: "oz",
             amount: 40,
@@ -185,6 +195,7 @@ export const commissaryItemData = [
     },
     {
         name: "San Francisco Pretzel Company Sourdough Pretzels",
+        shortName: "Sourdough Pretzels",
         measurement: {
             unit: "oz",
             amount: 52,
@@ -203,6 +214,7 @@ export const commissaryItemData = [
     },
     {
         name: "Kirkland Signature Extra Fancy Mixed Nuts",
+        shortName: "Salted Mixed Nuts",
         measurement: {
             unit: "lb",
             amount: 2.5,
@@ -221,6 +233,7 @@ export const commissaryItemData = [
     },
     {
         name: "Kirkland Signature Extra Fancy Unsalted Mixed Nuts",
+        shortName: "Unsalted Mixed Nuts",
         measurement: {
             unit: "lb",
             amount: 2.5,
@@ -239,6 +252,7 @@ export const commissaryItemData = [
     },
     {
         name: "Kirkland Signature Trail Mix",
+        shortName: "M&M Trail Mix",
         measurement: {
             unit: "lb",
             amount: 4,
@@ -257,6 +271,7 @@ export const commissaryItemData = [
     },
     {
         name: "WildRoots Coastal Berry Blend 100% Natural Trail Mix",
+        shortName: "Berry Trail Mix",
         measurement: {
             unit: "oz",
             amount: 26,
@@ -275,6 +290,7 @@ export const commissaryItemData = [
     },
     {
         name: "Nature's Bakery Stone Ground Whole Wheat Fig Bars Variety Pack",
+        shortName: "Fig Bars",
         measurement: {
             unit: "lb",
             amount: 4.5,
@@ -293,13 +309,14 @@ export const commissaryItemData = [
     },
     {
         name: "Kirkland Signature Bagels (Plain, Onion, Sesame, Parmesan Cheese)",
+        shortName: "Einstein Bagels",
         measurement: {
             unit: "ct",
             amount: 6,
             count: 2
         },
         image: {
-            src: "",
+            src: "images/kirkland-signature-bagels.jpg",
             alt: "2 bags of Einstein brothers bagels"
         },
         currency: {
@@ -311,13 +328,14 @@ export const commissaryItemData = [
     },
     {
         name: "Kraft Philadelphia Original Cream Cheese Spread",
+        shortName: "Philly Cream Cheese",
         measurement: {
             unit: "oz",
             amount: 12,
             count: 1
         },
         image: {
-            src: "",
+            src: "images/kraft-philadelphia-original-cream-cheese-spread.jpg",
             alt: "a big tub of Philadelphia Original Cream Cheese"
         },
         currency: {
@@ -329,13 +347,14 @@ export const commissaryItemData = [
     },
     {
         name: "Adams 100% Natural Crunchy Peanut Butter",
+        shortName: "Adams Crunch Peanut Butter",
         measurement: {
             unit: "oz",
             amount: 16,
             count: 1
         },
         image: {
-            src: "",
+            src: "images/adams-natural-crunchy-peanut-butter.jpg",
             alt: "a big jar of Adams 100% Natural Crunchy Peanut Butter"
         },
         currency: {
@@ -347,13 +366,14 @@ export const commissaryItemData = [
     },
     {
         name: "Adams 100% Natural Creamy Peanut Butter",
+        shortName: "Adams Creamy Peanut Butter",
         measurement: {
             unit: "oz",
             amount: 16,
             count: 1
         },
         image: {
-            src: "",
+            src: "images/adams-creamy-peanutbutter.jpg",
             alt: "a big jar of Adams 100% Natural Creamy Peanut Butter"
         },
         currency: {
@@ -364,14 +384,34 @@ export const commissaryItemData = [
         active: true
     },
     {
+        name: "Organic Creamy Peanut Butter",
+        shortName: " Organic Creamy Peanut Butter",
+        measurement: {
+            unit: "oz",
+            amount: 28,
+            count: 2
+        },
+        image: {
+            src: "images/organic-creamy-peanutbutter.jpg",
+            alt: "two big jars of organic Creamy Peanut Butter"
+        },
+        currency: {
+            symbol: "$",
+            amount: 9.97
+        },
+        store: "Costco",
+        active: true
+    },
+    {
         name: "Twinings English Breakfast Tea Bags",
+        shortName: " English Breakfast Tea",
         measurement: {
             unit: "ct",
             amount: 50,
             count: 1
         },
         image: {
-            src: "",
+            src: "images/twinings-english-black-tea.jpg",
             alt: "a big box of Twinings Englich Breakfast Tea Bags"
         },
         currency: {
@@ -383,13 +423,14 @@ export const commissaryItemData = [
     },
     {
         name: "Bigelow Earl Grey Black Tea Blend",
+        shortName: "Earl Grey Black Tea",
         measurement: {
             unit: "ct",
             amount: 20,
             count: 1
         },
         image: {
-            src: "",
+            src: "images/bigelow-earl-grey.jpg",
             alt: "a box of Bigelow Earl Grey Tea Bags"
         },
         currency: {
@@ -401,13 +442,14 @@ export const commissaryItemData = [
     },
     {
         name: "Bigelow Green Tea Pack of 6",
+        shortName: "Grean Tea",
         measurement: {
             unit: "ct",
             amount: 40,
             count: 6
         },
         image: {
-            src: "",
+            src: "images/bigelow-green-tea-6-pack.jpg",
             alt: "a 6 pack of bigelow grean tea boxes"
         },
         currency: {
@@ -419,13 +461,14 @@ export const commissaryItemData = [
     },
     {
         name: "Stash Tea Chamomile Caffeine Free Herbal Tea Bags",
+        shortName: "Chamomile Tea",
         measurement: {
             unit: "ct",
             amount: 20,
             count: 1
         },
         image: {
-            src: "",
+            src: "images/stash-chamomile-tea.jpg",
             alt: "a box of stash tea chamomile Herbal tea bags"
         },
         currency: {
@@ -437,13 +480,14 @@ export const commissaryItemData = [
     },
     {
         name: "Bigelow Constant Comment Black Tea Blend",
+        shortName: "Constant Comment",
         measurement: {
             unit: "ct",
             amount: 20,
             count: 1
         },
         image: {
-            src: "",
+            src: "images/bigelow-constant-comment-black-tea-blend.jpg",
             alt: "a box of bigelow Constant Commenttea bags"
         },
         currency: {
@@ -455,13 +499,14 @@ export const commissaryItemData = [
     },
     {
         name: "King Soopers Whole Vitamin D Milk",
+        shortName: "Whole Milk",
         measurement: {
             unit: "gal",
             amount: .5,
             count: 1
         },
         image: {
-            src: "",
+            src: "images/kroger-half-gallon-whole-milk.jpg",
             alt: "A half gallon jug of King Soopers whole milk"
         },
         currency: {
@@ -473,14 +518,15 @@ export const commissaryItemData = [
     },
     {
         name: "Simply Orange Juice",
+        shortName: "Simply Orange Juice",
         measurement: {
             unit: "fl oz",
             amount: 89,
             count: 1
         },
         image: {
-            src: "",
-            alt: "a big jug of Simply Orange Juice"
+            src: "images/simply-orange-juice.jpg",
+            alt: "a big jug of Simply Orange Juice",
         },
         currency: {
             symbol: "$",
@@ -491,14 +537,15 @@ export const commissaryItemData = [
     },
     {
         name: "Nestle Coffee Mate French Vanilla Sugar Free Liquid Coffee Creamer",
+        shortName: "Sugar Free Vanilla Creamer",
         measurement: {
             unit: "fl oz",
             amount: 64,
             count: 1
         },
         image: {
-            src: "",
-            alt: "a big jug of nestle coffee mate frehcn vanilla Sugar free liquid coffee creamer"
+            src: "images/nestle-coffee-mate-sugar-free-coffee-creamer-vanilla.jpg",
+            alt: "a big jug of nestle coffee mate french vanilla Sugar free liquid coffee creamer"
         },
         currency: {
             symbol: "$",
@@ -509,13 +556,14 @@ export const commissaryItemData = [
     },
     {
         name: "Nestle Coffee Mate French Vanilla Coffee Creamer",
+        shortName: "French Vanilla Creamer",
         measurement: {
             unit: "oz",
             amount: 64,
             count: 1
         },
         image: {
-            src: "",
+            src: "images/nestle-coffee-mate-coffee-creamer-vanilla.jpg",
             alt: "a big jug 0f coffee mate french vanilla coffee creamer"
         },
         currency: {
@@ -527,13 +575,14 @@ export const commissaryItemData = [
     },
     {
         name: "Horizon Organic Organic Half & Half",
+        shortName: "Half & Half",
         measurement: {
             unit: "fl oz",
             amount: 32,
             count: 1
         },
         image: {
-            src: "",
+            src: "images/horizon-organic-half-and-half.jpg",
             alt: "a quart of horizon organic half & half"
         },
         currency: {
@@ -545,13 +594,14 @@ export const commissaryItemData = [
     },
     {
         name: "Lay's Classic Potato Chips Party Size!(selection varies)",
+        shortName: "Lay's Potato Chips",
         measurement: {
             unit: "oz",
             amount: 13.75,
             count: 1
         },
         image: {
-            src: "",
+            src: "images/lays-classic-potato-ships-party-size.jpg",
             alt: "a party size bag of lays classic potato chips"
         },
         currency: {
@@ -562,14 +612,34 @@ export const commissaryItemData = [
         active: true
     },
     {
+        name: "Nacho Cheese Doritos",
+        shortName: "Nacho Cheese Doritos",
+        measurement: {
+            unit: "oz",
+            amount: 28.9,
+            count: 1
+        },
+        image: {
+            src: "images/nacho-cheese-doritos.jpg",
+            alt: "a big bag of nacho cheese doritos"
+        },
+        currency: {
+            symbol: "$",
+            amount: 5.29
+        },
+        store: "Costco",
+        active: true
+    },
+    {
         name: "Coca-Cola",
+        shortName: "Coca-Cola",
         measurement: {
             unit: "fl oz",
             amount: 12,
             count: 35
         },
         image: {
-            src: "",
+            src: "images/coca-cola.jpg",
             alt: "a flat of coka-cola"
         },
         currency: {
@@ -581,13 +651,14 @@ export const commissaryItemData = [
     },
     {
         name: "Dr Pepper",
+        shortName: "Dr Pepper",
         measurement: {
             unit: "fl oz",
             amount: 32,
             count: 35
         },
         image: {
-            src: "",
+            src: "images/dr-pepper.jpg",
             alt: "a box of Dr. Pepper"
         },
         currency: {
@@ -599,13 +670,14 @@ export const commissaryItemData = [
     },
     {
         name: "Sprite",
+        shortName: "Sprite",
         measurement: {
             unit: "oz",
             amount: 12,
             count: 35
         },
         image: {
-            src: "",
+            src: "images/sprite.jpg",
             alt: "a flat of sprite"
         },
         currency: {
@@ -616,13 +688,14 @@ export const commissaryItemData = [
         active: true
     }, {
         name: "Coca-Cola Zero",
+        shortName: "Coca-Cola Zero",
         measurement: {
             unit: "fl oz",
             amount: 32,
             count: 35
         },
         image: {
-            src: "",
+            src: "images/coca-cola-zero.jpg",
             alt: "a flat of coke zero"
         },
         currency: {
@@ -633,13 +706,14 @@ export const commissaryItemData = [
         active: true
     }, {
         name: "Pepsi",
+        shortName: "Pepsi",
         measurement: {
             unit: "fl oz",
             amount: 12,
             count: 36
         },
         image: {
-            src: "",
+            src: "images/pepsi.jpg",
             alt: "a box of pepsi"
         },
         currency: {
@@ -651,13 +725,14 @@ export const commissaryItemData = [
     },
     {
         name: "Mountain Dew",
+        shortName: "Mountain Dew",
         measurement: {
             unit: "fl oz",
             amount: 12,
             count: 12
         },
         image: {
-            src: "",
+            src: "images/mtn-dew.jpg",
             alt: "a 12 pack box of Mountain Dew"
         },
         currency: {
@@ -669,13 +744,14 @@ export const commissaryItemData = [
     },
     {
         name: "LaCroix",
+        shortName: "LaCroix",
         measurement: {
             unit: "fl oz",
             amount: 12,
             count: 24
         },
         image: {
-            src: "",
+            src: "images/lacroix.jpg",
             alt: "a flat of la croix variety pack"
         },
         currency: {
@@ -687,13 +763,14 @@ export const commissaryItemData = [
     },
     {
         name: "Sparkling Ice",
+        shortName: "Sparkling Ice",
         measurement: {
             unit: "fl oz",
             amount: 17,
             count: 18
         },
         image: {
-            src: "",
+            src: "images/sparkling-ice.jpg",
             alt: "a flat of Sparkling Ice bottles variety pack"
         },
         currency: {
@@ -705,13 +782,14 @@ export const commissaryItemData = [
     },
     {
         name: "Tradewinds Unsweetened Tea",
+        shortName: "Tradewinds Unsweetened Tea",
         measurement: {
             unit: "gal",
             amount: 1,
             count: 1
         },
         image: {
-            src: "",
+            src: "images/tradewinds-unsweetened-tea.jpg",
             alt: "a gallon of Unsweetened tea"
         },
         currency: {
@@ -723,13 +801,14 @@ export const commissaryItemData = [
     },
     {
         name: "Tradewinds Sweet Tea",
+        shortName: "Tradewinds Sweet Tea",
         measurement: {
             unit: "gal",
             amount: 1,
             count: 1
         },
         image: {
-            src: "",
+            src: "images/tradewinds-sweet-tea.jpg",
             alt: "a gallon of sweet tea"
         },
         currency: {
@@ -741,13 +820,14 @@ export const commissaryItemData = [
     },
     {
         name: "Kirkland Signature House Blend",
+        shortName: "Starbucks House Blend",
         measurement: {
             unit: "oz",
             amount: 32,
             count: 1
         },
         image: {
-            src: "",
+            src: "kirkland-signature-house-blend-coffee.jpg",
             alt: "Starbucks House Blend Coffee Beans"
         },
         currency: {
@@ -759,13 +839,14 @@ export const commissaryItemData = [
     },
     {
         name: "Kirkland Signature Pure Clover Honey",
+        shortName: "Honey",
         measurement: {
             unit: "oz",
             amount: 80,
             count: 1
         },
         image: {
-            src: "",
+            src: "images/kirkland-signature-honey.jpg",
             alt: "A big jug of pure clover honey"
         },
         currency: {
@@ -777,13 +858,14 @@ export const commissaryItemData = [
     },
     {
         name: "Cholula",
+        shortName: "Cholula",
         measurement: {
             unit: "oz",
             amount: 12,
             count: 2
         },
         image: {
-            src: "",
+            src: "images/cholula.jpg",
             alt: "a two pack of Cholula"
         },
         currency: {
@@ -795,13 +877,14 @@ export const commissaryItemData = [
     },
     {
         name: "Tabasco",
+        shortName: "Tabasco",
         measurement: {
             unit: "fl oz",
             amount: 12,
             count: 1
         },
         image: {
-            src: "",
+            src: "images/tabasco,jpg",
             alt: "a bottle of tobasco"
         },
         currency: {
