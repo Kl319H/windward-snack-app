@@ -12,42 +12,90 @@ if (Meteor.isServer) {
 }
 //TODO add security check for only liking or disliking once by user
 
+
+const getItemUserStatus = function(commissaryId, userId){
+        const item = CommissaryItems.findOne(commissaryId);
+        let status = "none";
+        const userLiked = item.userLikeIds.includes(userId);
+        if(userLiked){
+            status = "liked";
+        }
+        const userDisliked = item.userDislikeIds.includes(userId);
+        if(userDisliked){
+            status = "disliked";
+        }
+
+        return status;
+};
+
 Meteor.methods({
-    likeCommissaryItem: function(id){
+    likeCommissaryItem: function(commissaryId){
         const userId = Meteor.userId();
-        console.log(id);
 
         if (! userId) {
             throw new Meteor.Error('not-authorized');
         }
 
-
-        CommissaryItems.update(
-            {_id: id, userLikeIds: {$nin: [userId]} },
-            {$inc: {likes: 1},$push: {userLikeIds: userId}}
-        );
-
-
-        Meteor.users.update(
-            {_id: userId, likedCommissaryItems: {$nin: [id]}},
-            {$push: {likedCommissaryItems: id}}
-        );
+        const status = getItemUserStatus(commissaryId, userId);
+        if(status === "disliked"){
+            CommissaryItems.update(
+                {_id: commissaryId},
+                {
+                    $inc: {likes: 1, dislikes: -1},
+                    $push: {userLikeIds: userId},
+                    $pull: {userDislikeIds: userId}
+                }
+            );
+            Meteor.users.update(
+                {_id: userId},
+                {
+                    $push: {likedCommissaryItems: commissaryId},
+                    $pull: {dislikedCommissaryItems: commissaryId}
+                }
+            );
+        }else if(status === "none") {
+            CommissaryItems.update(
+                {_id: commissaryId},
+                {$inc: {likes: 1},$push: {userLikeIds: userId}}
+            );
+            Meteor.users.update(
+                {_id: userId},
+                {$push: {likedCommissaryItems: commissaryId}}
+            );
+        }
     },
-    dislikeCommissaryItem: function(id){
+    dislikeCommissaryItem: function(commissaryId){
         const userId = Meteor.userId();
-        console.log(id);
         if (! Meteor.userId()) {
           throw new Meteor.Error('not-authorized');
         }
-        CommissaryItems.update(
-            {_id: id, userDislikeIds: {$nin: [userId]} },
-            {$inc: {dislikes: 1},$push: {userDislikeIds: userId}}
-        );
 
-
-        Meteor.users.update(
-            {_id: userId, dislikedCommissaryItems: {$nin: [id]}},
-            {$push: {dislikedCommissaryItems: id}}
-        );
+        const status = getItemUserStatus(commissaryId, userId);
+        if (status === "liked"){
+            CommissaryItems.update(
+                {_id: commissaryId},
+                {
+                    $inc: {dislikes: 1, likes: -1},
+                    $push: {userDislikeIds: userId},
+                    $pull: {userLikeIds: userId}
+                }
+            );
+            Meteor.users.update(
+                {_id: userId},
+                {
+                    $push: {dislikedCommissaryItems: commissaryId},
+                    $pull: {likedCommissaryItems: commissaryId}
+                }
+            );
+        }else if(status === "none"){
+            CommissaryItems.update(
+                {_id: commissaryId, userDislikeIds: {$nin: [userId]} },
+                {$inc: {dislikes: 1},$push: {userDislikeIds: userId}}
+            );
+            Meteor.users.update(
+                {_id: userId, dislikedCommissaryItems: {$nin: [commissaryId]}},
+                {$push: {dislikedCommissaryItems: commissaryId}}
+            );
+        }
     }
 });

@@ -827,7 +827,7 @@ export const commissaryItemData = [
             count: 1
         },
         image: {
-            src: "kirkland-signature-house-blend-coffee.jpg",
+            src: "images/kirkland-signature-house-blend-coffee.jpg",
             alt: "Starbucks House Blend Coffee Beans"
         },
         currency: {
@@ -884,7 +884,7 @@ export const commissaryItemData = [
             count: 1
         },
         image: {
-            src: "images/tabasco,jpg",
+            src: "images/tabasco.jpg",
             alt: "a bottle of tobasco"
         },
         currency: {

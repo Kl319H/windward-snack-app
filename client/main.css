@@ -1,1 +1,13 @@
-/* CSS declarations go here */
+html, body{
+    height: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar-toggle {
+    float: left;
+    margin-left: 15px;
+}

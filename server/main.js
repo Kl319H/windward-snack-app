@@ -13,12 +13,19 @@ Meteor.startup(() => {
     if(itemsCount === 0){
         commissaryItemData.forEach(function(item, i){
             if (item.name !== "") {
+                item.likes = 0;
+                item.dislikes = 0;
+                item.userLikeIds = [];
+                item.userDislikeIds = [];
+
                 const id = CommissaryItems.insert(item);
                 console.log(`inserted item : ${id}`);
             }
         });
     }
 });
+
+
 
 Meteor.publish("users", function(){
     return Meteor.users.find({_id: this.userId}, {fields: {

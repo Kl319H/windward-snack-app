@@ -23,7 +23,7 @@ Template.body.helpers({
 Template.card.helpers({
     userLikedClass: function(){
         const liked = Meteor.users.findOne({likedCommissaryItems: {$in: [this._id]}});
-        return liked? 'springgreen': '';
+        return liked? 'dodgerblue': '';
     },
     userDislikedClass: function(){
         const disliked = Meteor.users.findOne({dislikedCommissaryItems: {$in: [this._id]}});
