@@ -10,8 +10,6 @@ if (Meteor.isServer) {
       return CommissaryItems.find({});
   });
 }
-//TODO add security check for only liking or disliking once by user
-
 
 const getItemUserStatus = function(commissaryId, userId){
         const item = CommissaryItems.findOne(commissaryId);
