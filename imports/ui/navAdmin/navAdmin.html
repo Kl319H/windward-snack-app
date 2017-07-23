@@ -1,0 +1,13 @@
+<template name="navAdmin">
+    {{#if isInRole 'admin'}}
+    <nav class ="navbar navbar-fixed-bottom navbar-default">
+        <div class="container">
+            <a href="/" type="button" class="btn btn-default navbar-btn"><i class="fa fa-home fa-fw" aria-hidden="true"></i></a>
+            <a href="/charts" type="button" class="btn btn-default navbar-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></a>
+            <a href="/list" type="button" class="btn btn-default navbar-btn"><i class="fa fa-list-ul" aria-hidden="true"></i></a>
+            <a href="/cart" type="button" class="btn btn-default navbar-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+
+        </div>
+    </nav>
+    {{/if}}
+</template>

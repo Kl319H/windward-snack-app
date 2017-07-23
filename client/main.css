@@ -1,21 +1,12 @@
-html, body{
-    height: 100%;
+body{
+    margin-bottom: 60px;
 }
 
-.swiper-container {
-    width: 100%;
-    z-index: 1;
+.login-container{
+    max-width: 300px;
+    margin: auto;
 }
 
-.swiper-slide {
-    padding: 50px;
-}
-
-.navbar-toggle {
-    float: left;
-    margin-left: 15px;
-}
-
-.slategrey {
-    color: slategrey;
+.admin-btn{
+    float: right;
 }

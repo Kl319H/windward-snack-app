@@ -1,4 +1,4 @@
-export const user = [
+export const users = [
     {
         firstName: "Adam",
         lastName: "Jackson",
@@ -52,7 +52,8 @@ export const user = [
     {
         firstName: "Dave",
         lastName: "Thielen",
-        email: "david@windward.net"
+        email: "david@windward.net",
+        roles: ["admin"]
     },
     {
         firstName: "En-jay",
@@ -77,7 +78,8 @@ export const user = [
     {
         firstName: "Krista",
         lastName: "Sanchez",
-        email: "kristas@windward.net"
+        email: "kristas@windward.net",
+        roles: ["admin"]
     },
     {
         firstName: "Lesley",
@@ -163,6 +165,11 @@ export const user = [
         firstName: "Arie",
         lastName: "Kazatcker",
         email: "ariek@windward.net"
+    },
+    {
+        firstName: "Kelly",
+        lastName: "Gillespie",
+        email: "kellyg@windward.net"
     },
     {
         firstName: "Donny",

@@ -1,0 +1,12 @@
+<template name="nav">
+    <nav class ="navbar navbar-fixed-bottom navbar-default">
+        <div class="container">
+           <a href="/" type="button" class="btn btn-default navbar-btn"><i class="fa fa-home fa-fw" aria-hidden="true"></i></a>
+           <a href="/likes" type="button" class="btn btn-default navbar-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+           <a href="/dislikes" type="button" class="btn btn-default navbar-btn"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a>
+           {{#if isInRole 'admin'}}
+           <a href="/admin" type="button" class="btn btn-default navbar-btn admin-btn"><i class="fa fa-pied-piper-alt" aria-hidden="true"></i></a>
+           {{/if}}
+        </div>
+    </nav>
+</template>

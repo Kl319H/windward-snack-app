@@ -19,10 +19,8 @@ shell-server@0.2.3            # Server-side component of the `meteor shell` comm
 
 twbs:bootstrap
 fortawesome:fontawesome
-ian:accounts-ui-bootstrap-3
+useraccounts:bootstrap
 accounts-password
-new3rs:html2canvas
-swiper:swiper
 kadira:flow-router
 kadira:blaze-layout
 alanning:roles

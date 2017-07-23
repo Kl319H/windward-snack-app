@@ -7,7 +7,11 @@ export const CommissaryItems = new Mongo.Collection("commissaryItems");
 if (Meteor.isServer) {
   // This code only runs on the server
   Meteor.publish('commissaryItems', function () {
-      return CommissaryItems.find({});
+      if(this.userId){
+          return CommissaryItems.find({});
+      } else {
+          return [];
+      }
   });
 }
 
