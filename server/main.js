@@ -1,21 +1,10 @@
-import {
-    Meteor
-} from 'meteor/meteor';
-import {
-    Accounts
-} from 'meteor/accounts-base';
-import {
-    Email
-} from 'meteor/email';
-import {
-    CommissaryItems
-} from '../imports/api/CommissaryItems.js';
-import {
-    commissaryItemData
-} from './commissaryItemData.js';
-import {
-    users
-} from './users.js';
+import { Meteor } from 'meteor/meteor';
+import { Accounts } from 'meteor/accounts-base';
+import { Email } from 'meteor/email';
+import { CommissaryItems } from '../imports/api/CommissaryItems.js';
+import { commissaryItemData } from './commissaryItemData.js';
+import { users } from './users.js';
+import '../imports/api/userAccounts.js';
 
 
 Meteor.methods({
