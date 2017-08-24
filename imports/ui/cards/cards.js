@@ -11,17 +11,35 @@ const renderCount = new ReactiveVar(0);
 
 Template.cards.onCreated(function() {
     //console.log(`commissaryItems: ${CommissaryItems.find().count()}`);
-  Meteor.subscribe('commissaryItems', function(){
-      itemCount = CommissaryItems.find().count();
-      //console.log(`commissaryItems: ${itemCount}`);
-      //console.log(CommissaryItems.find().fetch());
-  });
-});
+    const instance = this;
 
+    instance.autorun(function(){
+        instance.subscribe('commissaryItems', function(){
+            itemCount = CommissaryItems.find().count();
+            //console.log(`commissaryItems: ${itemCount}`);
+            //console.log(CommissaryItems.find().fetch());
+        });
+    });
+});
 
 Template.cards.helpers({
     commissaryItems: function(){
-        return CommissaryItems.find();
+        FlowRouter.watchPathChange();
+        const filter = FlowRouter.current().route.name;
+        const user = Meteor.user();
+        let commissaryItems = [];
+        if (user && user.likedCommissaryItems) {
+            if (filter === 'likes'){
+                commissaryItems = CommissaryItems.find({_id: {$in: user.likedCommissaryItems}});
+            } else if (filter === 'dislikes'){
+                commissaryItems = CommissaryItems.find({_id: {$in: user.dislikedCommissaryItems}});
+            } else {
+                commissaryItems = CommissaryItems.find();
+            }
+        }
+
+        console.log(filter, user);
+        return commissaryItems;
     }
 });
 

@@ -40,6 +40,34 @@ FlowRouter.route('/', {
         BlazeLayout.render('mainLayout', {main: 'cards', nav: 'nav'});
     }
 });
+FlowRouter.route('/likes', {
+    name: "likes", // optional
+    triggersEnter: [function(context, redirect) {
+        const userId = Meteor.userId();
+        if(!userId){
+            redirect('/account');
+        }
+    }],
+    action: function(params, queryParams) {
+        console.log("Params:", params);
+        console.log("Query Params:", queryParams);
+        BlazeLayout.render('mainLayout', {main: 'cards', nav: 'nav'});
+    }
+});
+FlowRouter.route('/dislikes', {
+    name: "dislikes", // optional
+    triggersEnter: [function(context, redirect) {
+        const userId = Meteor.userId();
+        if(!userId){
+            redirect('/account');
+        }
+    }],
+    action: function(params, queryParams) {
+        console.log("Params:", params);
+        console.log("Query Params:", queryParams);
+        BlazeLayout.render('mainLayout', {main: 'cards', nav: 'nav'});
+    }
+});
 
 FlowRouter.route('/logout', {
     name: "logout", // optional
