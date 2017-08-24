@@ -1,9 +1,9 @@
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 
-import './admin.html';
+import './charts.html';
 
-Template.admin.onCreated(function(){
+Template.charts.onCreated(function(){
     const instance = this;
 
     instance.subscribe('users', function(){
@@ -14,15 +14,8 @@ Template.admin.onCreated(function(){
 })
 
 
-Template.admin.helpers({
+Template.charts.helpers({
     users(){
         return Meteor.users.find();
-    }
-})
-Template.userListItem.events({
-    'click [data-send-enrollment]'(event, instance){
-        const user = this;
-        console.log(user);
-        Meteor.call('sendEnrollmentEmail', user._id);
     }
 })

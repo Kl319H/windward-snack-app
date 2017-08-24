@@ -1,6 +1,6 @@
-<template name="admin">
+<template name="users">
     {{#if isInRole 'admin'}}
-        <h1>admin</h1>
+        <h1>users</h1>
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
           {{#each users}}
                 {{> userListItem}}

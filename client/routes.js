@@ -6,19 +6,28 @@ import '../imports/ui/layouts/mainLayout.js';
 import '../imports/ui/account/account.js';
 import '../imports/ui/nav/nav.js';
 import '../imports/ui/cards/cards.js';
-import '../imports/ui/admin/admin.js';
-import '../imports/ui/navAdmin/navAdmin.js';
+import '../imports/ui/charts/charts.js';
+import '../imports/ui/users/users.js';
+import '../imports/ui/commissaryItems/commissaryItems.js';
+import '../imports/ui/cart/cart.js';
 
+const ensureLoggedIn = function(context, redirect) {
+    const userId = Meteor.userId();
+    if(!userId){
+        redirect('/login');
+    }
+};
 
 
 Accounts.onLogin(function(){
     const path = FlowRouter.current().path;
-   if (path === "/account") {
-      FlowRouter.go("/");
-   }
+    if (path === "/account") {
+        FlowRouter.go("/");
+    }
 })
 
 FlowRouter.route('/', {
+    name: "home", // optional
     triggersEnter: [function(context, redirect) {
         const userId = Meteor.userId();
         if(!userId){
@@ -29,51 +38,62 @@ FlowRouter.route('/', {
         console.log("Params:", params);
         console.log("Query Params:", queryParams);
         BlazeLayout.render('mainLayout', {main: 'cards', nav: 'nav'});
-    },
-
-    name: "home" // optional
+    }
 });
 
 FlowRouter.route('/logout', {
+    name: "logout", // optional
     triggersEnter: [function(context, redirect) {
         Meteor.logout(function() {
             console.log("/account")
             FlowRouter.go('/account');
         });
     }],
-
-    name: "logout" // optional
 });
 
 FlowRouter.route('/account', {
-    triggersEnter: [function(context, redirect) {
-        const userId = Meteor.userId();
-        if(userId){
-            //redirect('/');
-        }
-        console.log('!');
-    }],
-    action: function(params, queryParams) {
+    name: "account", // optional
+        action: function(params, queryParams) {
         console.log("Params:", params);
         console.log("Query Params:", queryParams);
         BlazeLayout.render('mainLayout', {main: 'account', nav: 'nav'});
-    },
-
-    name: "account" // optional
+    }
 });
 
-FlowRouter.route('/admin', {
-    triggersEnter: [function(context, redirect) {
-        const userId = Meteor.userId();
-        if(!userId){
-            redirect('/login');
-        }
-    }],
+FlowRouter.route('/admin/charts', {
+    name: "charts", // optional
+    triggersEnter: [ensureLoggedIn],
     action: function(params, queryParams) {
         console.log("Params:", params);
         console.log("Query Params:", queryParams);
-        BlazeLayout.render('mainLayout', {main: 'admin', nav: 'navAdmin'});
-    },
+        BlazeLayout.render('mainLayout', {main: 'charts', nav: 'nav'});
+    }
+});
 
-    name: "admin" // optional
+FlowRouter.route('/admin/users', {
+    name: "users", // optional
+    triggersEnter: [ensureLoggedIn],
+    action: function(params, queryParams) {
+        console.log("Params:", params);
+        console.log("Query Params:", queryParams);
+        BlazeLayout.render('mainLayout', {main: 'users', nav: 'nav'});
+    }
+});
+FlowRouter.route('/admin/commissary-items', {
+    name: "commissary-items", // optional
+    triggersEnter: [ensureLoggedIn],
+    action: function(params, queryParams) {
+        console.log("Params:", params);
+        console.log("Query Params:", queryParams);
+        BlazeLayout.render('mainLayout', {main: 'commissaryItems', nav: 'nav'});
+    }
+});
+FlowRouter.route('/admin/cart', {
+    name: "cart", // optional
+    triggersEnter: [ensureLoggedIn],
+    action: function(params, queryParams) {
+        console.log("Params:", params);
+        console.log("Query Params:", queryParams);
+        BlazeLayout.render('mainLayout', {main: 'cart', nav: 'nav'});
+    }
 });
